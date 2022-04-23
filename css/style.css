@@ -44,7 +44,7 @@
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background: url(https://images.wallpaperscraft.ru/image/single/fotoapparat_osen_listva_129190_1920x1080.jpg);
+    background: url(https://images.wallpaperscraft.ru/image/single/gradient_poverhnost_kraska_124880_1920x1080.jpg);
   }
   
   /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -95,32 +95,39 @@
   }
   .text {
     text-align: right;
-    margin: 40px 25px;
+    margin-top: 40px;
     font-size: 15px;
+    border: 1px solid red;
+    height: 500px;
+    width: 100%;
+    text-align: center;
 }
   .text_h1{
+    padding-top: 70px;
+    padding-bottom: 40px;
     font-size: 25px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
   .text_h2 {
-    margin: 0 45%;
+    color: rgb(6, 6, 6);
   }
-  h2{
-      text-align: start;
-      border: 2px solid silver;
-      max-width: 60%;
+  h2 {
+      text-align: center;
+      border: 4px solid rgb(233, 229, 229);
+      border-radius: 2px;
+      padding: 15px;
       font-size: 23px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      margin-left: 450px;
+      opacity: 0.9;
+      width: 600px;
   }
-  .text_p {
-      border: 2px solid rebeccapurple;
-      max-width: 40%;
-      text-align: start;
-      color: rgb(120, 120, 120);
-      font-size: 23px;
-      font-weight: 600px;
+  h2:hover {
+     background-color: black;
+     color: white;
+     transition-duration: 0.6s;
   }
   .about {
      width: 100%;
@@ -138,6 +145,7 @@
   
   }
   .click {
+    margin-top: 100px;
     background-color: white;
     padding: 14px 50px;
     border: none;
