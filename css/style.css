@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Roboto:wght@100;300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Montserrat+Alternates:wght@200;300&family=Roboto:wght@100;300&family=Square+Peg&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -44,7 +48,6 @@
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background: url(https://images.wallpaperscraft.ru/image/single/gradient_poverhnost_kraska_124880_1920x1080.jpg);
   }
   
   /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -65,40 +68,39 @@
   }
   
   .logo {
-      background-image: url("/www/img/76f8a388235263.5dd0278605518.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 1;
-      width: 100%;
       height: 770px;
-      position: relative;
+      background: url(https://images.wallpaperscraft.ru/image/single/gradient_goluboj_rozovyj_178820_1920x1080.jpg);
   }
   body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .list_header {margin-left: 5%;}
   .list_header_text li {
       font-weight: 600;
-      padding: 0 1px;
-      padding: 0 10px;
-      margin: 20px 0 0 10px;
+      padding: 0 20px;;
       display: inline-block;
+      line-height: 50px;
       font-size: 16px;
       text-transform: uppercase;
-      color: rgb(39, 39, 39);
+      color: rgb(228, 228, 228);
+      border-right: 4px solid rgb(255, 255, 255);
   }
-  .list {text-align: left;}
-
-  li:hover{
-    letter-spacing: 1px;
-    text-shadow: 6px 13px 2px black;
+  .list_header_text li:hover{
+    background-color: rgba(254, 254, 254, 0.671);
+    height: 100%;
+    color: black;
+    border-start-start-radius: 3px;
+    transition-duration: 0.3s;
+  }
+  .list {
+    text-align: left; 
+    background-color: rgba(36, 35, 35, 0.925);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
   }
   .text {
-    text-align: right;
-    margin-top: 40px;
     font-size: 15px;
-    border: 1px solid red;
-    height: 500px;
+    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -107,45 +109,37 @@
     padding-bottom: 40px;
     font-size: 25px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
     letter-spacing: 3px;
+    color: rgb(255, 255, 255);
   }
   .text_h2 {
-    color: rgb(6, 6, 6);
+    color: rgb(21, 21, 21);
+    padding-bottom: 260px;
+    margin-top: 120px;
+    letter-spacing: 1px;
   }
-  h2 {
-      text-align: center;
-      border: 4px solid rgb(233, 229, 229);
-      border-radius: 2px;
-      padding: 15px;
-      font-size: 23px;
-      margin-bottom: 20px;
-      margin-left: 450px;
-      opacity: 0.9;
-      width: 600px;
+  .content {
+  border: 2px solid silver;
+  }
+  .text_h2 h2 {
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 23px;
+    opacity: 0.9;
+    line-height: 40px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
   h2:hover {
-     background-color: black;
-     color: white;
-     transition-duration: 0.6s;
-  }
-  .about {
-     width: 100%;
-     height: 400px;
-     background-color: rgb(255, 255, 255);
-  }
-  .about h2 {
-    text-align: center;
-    padding: 90px 0 0 0;
-    font-size: 30px;
-  }
-  .about p {
-    text-align: center;
-    color: rgb(120, 120, 120);
-  
+   background-color: rgba(37, 37, 37, 0.888);
+   color: white;
+   transition-duration: 0.7s;
+   border: 4px solid white;
   }
   .click {
-    margin-top: 100px;
     background-color: white;
     padding: 14px 50px;
     border: none;
@@ -154,26 +148,100 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
-    border: 2px solid red;
+    border: 4px solid red;
     text-transform: uppercase;
     color: black;
-    transition-duration: 0.4s;
-
+    transition-duration: 0.7s;
+    }
+  .cont {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
   }
   .click:hover {
       background-color: red;
       color: white;
-  }
+      border: 4px solid white;
+    }
   .click, .click:hover {
-    font-weight: bold;
-    letter-spacing: 1px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  .click:active {
+    background-color: rgb(92, 5, 5);
   }
-  .block_1 {
-    width: 50%;
-    height: 580px;
-    background-color: rgb(207, 207, 207);
-    float: right;
-    position: relative;
+  .about {
+    width: 100%;
+    background-color: whitesmoke;
+   }
+  .content_main {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(122, 122, 122);
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+  .about h2 {
+  text-align: center;
+  padding: 90px 0 0 0;
+  font-size: 30px;
+  }
+  .about p {
+  text-align: center;
+  color: rgb(120, 120, 120);
+  }
+  .boss_countent img {
+    display: inline-block;
+    padding: 0 12px;
+    margin-top: 14px;
+  }
+  .boss_countent img:hover {
+  transition-duration: 0.7s;
+  opacity: 0.7;
+  }
+  .pos {
+    margin: 20px auto;
+    max-width: 1300px;
+  }
+  .main_button {
+    margin-left: 120px;
+  }
+  .main_button_content_1, .main_button_content_2, .main_button_content_3 {
+    padding: 10px 168px;
+    margin-top: 10px;
+    display: inline-block;
+    border:  2px solid rgb(246, 210, 210);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: inherit;
+    letter-spacing: 2px;
+  }
+  .main_button_content_1 {
+    color: rgb(128, 243, 243);
+  }
+  .main_button_content_1:hover {
+    background-color: rgb(128, 243, 243);
+    color: white;
+    border-radius: 4px;
+    border: 2px solid white;
+  }
+  .main_button_content_2 { 
+    margin-left: 20px;
+    color: rgb(236, 243, 38);
+  }
+  .main_button_content_2:hover {
+    background-color: rgb(236, 243, 38);
+    color: white;
+  }
+  .main_button_content_3 { 
+    margin-left: 23px;
+    padding: 10px 161px;
+    color: rgb(248, 145, 20);
+  }
+  .main_button_content_3:hover {
+    background-color: rgb(248, 145, 20);
+    color: white;
+
   }
   .block_2 {
     width: 50%;
@@ -200,7 +268,6 @@
   .end {
     height: 20px;
     width: 20px;
-    background-color: blue;
   }
   .end {
     width: 100%;
